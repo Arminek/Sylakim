@@ -1,8 +1,8 @@
 {
-    "name": "jjanvier/sylakim",
+    "name": "sylake/sylakim",
     "type": "symfony-bundle",
-    "description": "Connector between Akeneo PIM and Sylius",
-    "keywords": ["pim", "akeneo", "ecommerce", "e-commerce", "sylius", "connector"],
+    "description": "Export your Akeneo PIM catalog to Sylius.",
+    "keywords": ["sylake", "sylakim", "pim", "akeneo", "sylius", "akeneopim", "akeneo-pim", "ecommerce", "e-commerce", "connector", "catalog", "products"],
     "license": "MIT",
     "authors": [
         {
@@ -25,22 +25,21 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/akeneo/platform.git"
+            "url": "https://github.com/Lakion/sylius-api-php.git"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "akeneo/pim-community-dev": "*",
-        "guzzlehttp/guzzle":        "4.*"
+        "akeneo/pim-community-dev": "~1.6",
+        "lakion/sylius-api-php": "dev-master"
     },
     "require-dev": {
-        "phpspec/phpspec": "2.1.0-RC1"
+        "phpspec/phpspec": "*"
     },
     "config": {
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-0": { "Sylius\\Bundle\\SylakimBundle\\": "" }
-    },
-    "target-dir": "Sylius/Bundle/SylakimBundle"
+        "psr-4": { "Sylake\\Bundle\\SylakimBundle\\": "src/" }
+    }
 }
