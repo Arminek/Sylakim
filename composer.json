@@ -1,5 +1,5 @@
 {
-    "name": "sylake/sylakim",
+    "name": "sylake/sylakim-bundle",
     "type": "symfony-bundle",
     "description": "Export your Akeneo PIM catalog to Sylius.",
     "keywords": ["sylake", "sylakim", "pim", "akeneo", "sylius", "akeneopim", "akeneo-pim", "ecommerce", "e-commerce", "connector", "catalog", "products"],
