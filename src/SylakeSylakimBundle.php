@@ -27,7 +27,5 @@ class SylakeSylakimBundle extends Bundle
      */
     public function build(ContainerBuilder $container)
     {
-        $container
-            ->addCompilerPass(new SerializerPass('sylake_sylakim.serializer'));
     }
 }
